@@ -10,7 +10,6 @@ import { ListingType } from "@/@types/api.type";
 const Shop = () => {
   const params = useParams();
   const shopId = params.shopId as string;
-
   const { data, isPending } = useQuery({
     queryKey: ["shop", shopId],
     queryFn: () => getShopByIdQueryFn(shopId),
