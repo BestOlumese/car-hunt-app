@@ -163,7 +163,7 @@ const FormGenerator: React.FC<FormGeneratorProps> = ({
             disabled={disabled}
             className="w-full text-sm !min-h-12 max-h-auto shadow-none"
             badgeClassName="!bg-primary/10 shadow-none text-black !font-medium"
-            value={getSelectedItems(options, valueMultiSelect) || []}
+            value={getSelectedItems(options || [], valueMultiSelect) || []}
             onChange={(selectItems) => {
                 const selectedValues = selectItems.map((item) => item.value);
                 onChange?.(selectedValues);
