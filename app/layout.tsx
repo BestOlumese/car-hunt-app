@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { NuqsAdapter } from "nuqs/adapters/next/app";
+  import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { Toaster } from "@/components/ui/toaster";
 import RegisterDialog from "@/components/auth/RegisterDialog";
 import LoginDialog from "@/components/auth/LoginDialog";

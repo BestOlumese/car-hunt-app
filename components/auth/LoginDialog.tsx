@@ -53,13 +53,13 @@ const LoginDialog = () => {
         queryClient.invalidateQueries({
           queryKey: ["currentUser"],
         });
-        toast({
-          title: "Login successfully",
-          description: "You have been logged in successfully",
-          variant: "success",
-        });
-        form.reset();
-        onClose();
+          toast({
+            title: "Login successfully",
+            description: "You have been logged in successfully",
+            variant: "success",
+          });
+          form.reset();
+          onClose();
       },
       onError: () => {
         toast({
